@@ -1,0 +1,63 @@
+
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _mixins.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains the LESS mixins for the project.
+
+**************************************************************************/
+
+// adds the correct vendor prefixes for linear gradients
+.LinearGradient (@startColor, @stopColor) {    
+    background-image: -webkit-linear-gradient(top, @startColor 0%, @stopColor 100%);
+    background-image: -o-linear-gradient(top, @startColor 0%, @stopColor 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom, from(0% @startColor), to(100% @stopColor));
+    background-image:-moz-linear-gradient(top, @startColor 0%, @stopColor 100%);
+    background-image: linear-gradient(to bottom, @startColor 0%, @stopColor 100%);    
+}
+
+// alternate version that accepts three colors
+.LinearGradient (@startColor, @stopColor, @stopColorPercent, @finalColor, @finalColorPercent) {
+    background-image:-webkit-linear-gradient(top, @startColor 0%, @stopColor @stopColorPercent, @finalColor @finalColorPercent);
+    background-image:-o-linear-gradient(top, @startColor 0%, @stopColor @stopColorPercent, @finalColor @finalColorPercent);
+    background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%, @startColor), color-stop(@stopColorPercent, @stopColor),color-stop(@finalColorPercent, @finalColor));
+    background-image:-moz-linear-gradient(top, @startColor 0%, @stopColor @stopColorPercent, @finalColor @finalColorPercent);
+    background-image: linear-gradient(to bottom, @startColor 0%, @stopColor @stopColorPercent, @finalColor @finalColorPercent);
+}
+
+// adds the correct vendor prefixes for box shadows
+.BoxShadow (@horizontalLength, @verticalLength, @blurRadius, @spreadRadius, @hexColor, @opacity ) {
+    
+    // helper function to convert a hex color into an rgba color
+    @rgbaColor: rgba( red(@hexColor), green(@hexColor), blue(@hexColor), @opacity );
+         
+    // creates the box shadow 
+    -webkit-box-shadow: @horizontalLength @verticalLength @blurRadius @spreadRadius @rgbaColor;
+    -moz-box-shadow: @horizontalLength @verticalLength @blurRadius @spreadRadius @rgbaColor;
+    box-shadow: @horizontalLength @verticalLength @blurRadius @spreadRadius @rgbaColor;
+}
+
+// adds the correct vendor prefixes for border radius
+.RoundedCorners (@topLeft, @topRight, @bottomRight, @bottomLeft) {
+    -webkit-border-radius: @topLeft @topRight @bottomRight @bottomLeft;    
+    -moz-border-radius: @topLeft @topRight @bottomRight @bottomLeft;
+    border-radius: @topLeft @topRight @bottomRight @bottomLeft;
+    
+}
+
+// alternate version that accepts one border radius
+.RoundedCorners (@borderRadius) {
+    -webkit-border-radius: @borderRadius;
+    -moz-border-radius: @borderRadius;
+    border-radius: @borderRadius;
+}
+
+// adds the correct vendor prefixes for transform rotate
+.Rotate (@rotationDeg) {
+    -webkit-transform: rotate(@rotationDeg); 
+    -ms-transform: rotate(@rotationDeg); 
+    transform: rotate(@rotationDeg);
+}

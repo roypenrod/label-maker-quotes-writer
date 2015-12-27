@@ -1,0 +1,651 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _reset.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains custom CSS to add to the standard reset.
+
+**************************************************************************/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _mixins.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains the LESS mixins for the project.
+
+**************************************************************************/
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _base.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains the base CSS styles for the label writer quotes
+  project.
+
+**************************************************************************/
+html {
+  background-image: url(../images/cork-bg.jpg);
+  background-repeat: repeat;
+}
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _label_writer_quotes.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains the CSS styles for the label writer quotes page.
+
+**************************************************************************/
+.container {
+  width: 90%;
+  margin: 0;
+}
+.inner-container-quote {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.inner-container-author {
+  width: 90%;
+  min-height: 2%;
+  text-align: right;
+  margin-top: 0;
+}
+#container-quote3 .inner-container-quote {
+  text-align: center;
+}
+.container .quote,
+.container .author {
+  display: inline;
+  font-family: 'Inconsolata', sans-serif;
+  line-height: 1.5em;
+  color: #fff;
+  background-color: #333333;
+  text-shadow: none;
+}
+.container .quote {
+  width: auto;
+  font-size: 0.75em;
+  padding: 1% 2%;
+}
+.container .author {
+  font-size: 0.7em;
+  padding: 1% 2%;
+}
+.container .quote,
+.container .author {
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.quote1-line1 {
+  transfom-origin: center;
+  -webkit-transform: rotate(1.5deg);
+  -ms-transform: rotate(1.5deg);
+  transform: rotate(1.5deg);
+}
+.quote1-line2 {
+  transform-origin: center;
+  -webkit-transform: rotate(-0.75deg);
+  -ms-transform: rotate(-0.75deg);
+  transform: rotate(-0.75deg);
+}
+.quote1-line3 {
+  transfom-origin: center;
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+.inner-container-author.quote1 {
+  transform-origin: center;
+  -webkit-transform: rotate(-1.8deg);
+  -ms-transform: rotate(-1.8deg);
+  transform: rotate(-1.8deg);
+}
+.quote2-line1 {
+  transfom-origin: center;
+  -webkit-transform: rotate(-0.6deg);
+  -ms-transform: rotate(-0.6deg);
+  transform: rotate(-0.6deg);
+}
+.quote2-line2 {
+  transform-origin: center;
+  -webkit-transform: rotate(1.3deg);
+  -ms-transform: rotate(1.3deg);
+  transform: rotate(1.3deg);
+}
+.quote2-line3 {
+  transfom-origin: center;
+  -webkit-transform: rotate(-0.9deg);
+  -ms-transform: rotate(-0.9deg);
+  transform: rotate(-0.9deg);
+}
+.inner-container-author.quote2 {
+  width: 90%;
+  min-height: 2%;
+  text-align: right;
+  margin-top: -3%;
+  transform-origin: center;
+  -webkit-transform: rotate(1.6deg);
+  -ms-transform: rotate(1.6deg);
+  transform: rotate(1.6deg);
+}
+.quote3-line1 {
+  transfom-origin: center;
+  -webkit-transform: rotate(1.7deg);
+  -ms-transform: rotate(1.7deg);
+  transform: rotate(1.7deg);
+}
+.quote3-line2 {
+  transfom-origin: center;
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _label_writer_quotes_media.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains the media queries for the label writer quotes page.
+
+**************************************************************************/
+@media screen and (min-width: 320px) {
+  .container .quote {
+    font-size: 0.95em;
+  }
+  .container .author {
+    font-size: 0.85em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 360px) {
+  .container .quote {
+    font-size: 1.1em;
+  }
+  .container .author {
+    font-size: 0.95em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 3%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 5%;
+  }
+}
+@media only screen and (min-width: 375px) {
+  #container-quote1 .inner-container-quote {
+    padding-left: 4%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 7%;
+  }
+}
+@media only screen and (min-width: 400px) {
+  #container-quote1 .inner-container-quote {
+    padding-left: 6%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 9%;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .container .quote {
+    font-size: 1.3em;
+  }
+  .container .author {
+    font-size: 1.1em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container .quote {
+    font-size: 1.9em;
+  }
+  .container .author {
+    font-size: 1.596em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 0%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .container .quote {
+    font-size: 2.2em;
+  }
+  .container .author {
+    font-size: 1.65em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 2%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 5%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container .quote {
+    font-size: 2.4em;
+  }
+  .container .author {
+    font-size: 2.016em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #container-quote1 .inner-container-quote {
+    padding-left: 4%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 7%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container .quote {
+    font-size: 3.2em;
+  }
+  .container .author {
+    font-size: 2.688em;
+  }
+  .container .quote,
+  .container .author {
+    text-shadow: 2px 2px 0px #333333, 3px 3px 0px #AAAAAA;
+    -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+/*************************************************************************
+
+  Site:  roypenrod.com
+  Project: label writer quotes
+  Module: _label_writer_quotes_media_landscape.less
+  Author:  Roy Penrod
+  
+  Purpose:  Contains the media queries for the label writer quotes page 
+  for devices in landscape mode.
+
+**************************************************************************/
+@media only screen and (min-width: 480px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 1.5em;
+  }
+  .container .author {
+    font-size: 1.26em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 568px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 1.8em;
+  }
+  .container .author {
+    font-size: 1.512em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 0%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 640px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 2.0em;
+  }
+  .container .author {
+    font-size: 1.512em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 667px) and (orientation: landscape) {
+  #container-quote1 .inner-container-quote {
+    padding-left: 3%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 6%;
+  }
+}
+@media only screen and (min-width: 736px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 2.3em;
+  }
+  .container .author {
+    font-size: 1.932em;
+  }
+  .container .quote,
+  .container .author {
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 800px) and (orientation: landscape) {
+  #container-quote1 .inner-container-quote {
+    padding-left: 5%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 8%;
+  }
+}
+@media only screen and (min-width: 966px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 3.0em;
+  }
+  .container .author {
+    font-size: 2.52em;
+  }
+  .container .quote,
+  .container .author {
+    text-shadow: 2px 2px 0px #333333, 3px 3px 0px #AAAAAA;
+    -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 3.2em;
+  }
+  .container .author {
+    font-size: 2.688em;
+  }
+  .container .quote,
+  .container .author {
+    text-shadow: 2px 2px 0px #333333, 3px 3px 0px #AAAAAA;
+    -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-quote {
+    padding-left: 1%;
+  }
+  #container-quote2 .inner-container-quote {
+    padding-left: 4%;
+  }
+}
+@media only screen and (min-width: 1280px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 4em;
+  }
+  .container .author {
+    font-size: 3.36em;
+  }
+  .container .quote,
+  .container .author {
+    text-shadow: 2px 2px 0px #333333, 3px 3px 0px #AAAAAA;
+    -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 1600px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 4em;
+  }
+  .container .author {
+    font-size: 3.36em;
+  }
+  .container .quote,
+  .container .author {
+    text-shadow: 2px 2px 0px #333333, 3px 3px 0px #AAAAAA;
+    -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote2 .inner-container-author {
+    padding-right: 2%;
+  }
+}
+@media only screen and (min-width: 1920px) and (orientation: landscape) {
+  .container .quote {
+    font-size: 4em;
+  }
+  .container .author {
+    font-size: 3.36em;
+  }
+  .container .quote,
+  .container .author {
+    text-shadow: 2px 2px 0px #333333, 3px 3px 0px #AAAAAA;
+    -webkit-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  #container-quote1 .inner-container-author {
+    padding-right: 10%;
+  }
+  #container-quote2 .inner-container-author {
+    padding-right: 10%;
+  }
+}
